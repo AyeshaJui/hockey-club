@@ -707,10 +707,12 @@
         </div>
 
         <!-- form -->
-        <div class="my-10 flex gap-6">
-          <div class="flex flex-col gap-6 border-2 w-[40%] p-10 rounded-[16px]">
+        <div class="my-10 flex gap-6 justify-center items-center lg:justify-start flex-col lg:flex-row">
+          <div
+            class="flex flex-col gap-6 border-2 lg:w-[40%] w-[90%] lg:p-10 p-6 rounded-[16px]"
+          >
             <!-- left div -->
-            <div class="card w-[374px] h-[200px] bg-[#BCED6D1A]">
+            <div class="card lg:w-[374px] lg:h-[200px] bg-[#BCED6D1A]">
               <img class="w-10 ml-7 mt-10" src="Images/group-1.png" alt="" />
               <div class="card-body">
                 <h2 class="text-[#13131899]">Phone Number:</h2>
@@ -718,14 +720,14 @@
               </div>
             </div>
 
-            <div class="card w-[374px] h-[200px] bg-[#FDDD5F1A]">
+            <div class="card lg:w-[374px] lg:h-[200px] bg-[#FDDD5F1A]">
               <img class="w-10 ml-7 mt-10" src="Images/group-2.png" alt="" />
               <div class="card-body">
                 <h2 class="text-[#13131899]">Email:</h2>
                 <p class="font-extrabold">(+62) 123-321-543</p>
               </div>
             </div>
-            <div class="card w-[374px] h-[200px] bg-[#629CF31A]">
+            <div class="card lg:w-[374px] lg:h-[200px] bg-[#629CF31A]">
               <img class="w-10 ml-7 mt-10" src="Images/group-3.png" alt="" />
               <div class="card-body">
                 <h2 class="text-[#13131899]">Location:</h2>
@@ -736,21 +738,63 @@
 
           <!-- Right Div -->
 
-          <div class="w-[60%] ">
-            <div class="grid grid-cols-1 lg:grid-cols-3  ">
-              <div class="lg:col-span-2">
-                <div class="grid gap-4 grid-cols-2">
-                  <input
-                    type="text"
-                    placeholder="Type here"
-                    class="input input-bordered w-full max-w-xs"
-                  />
-                  <input
-                    type="text"
-                    placeholder="Type here"
-                    class="input input-bordered w-full max-w-xs"
-                  />
+          <div class="w-full">
+            <div class="grid grid-cols-1">
+              <div class="lg:col-span-2 ">
+                <div class="grid gap-8 lg:grid-cols-2 grid-cols-1">
+                  <div class="w-[324px]">
+                    <label class="font-bold" for="">Your Name</label>
+                    <input
+                      type="text"
+                      placeholder="Enter your full name"
+                      class="mt-2 input input-bordered w-full bg-[#13131808]"
+                    />
+                  </div>
+
+                  <div class="w-[324px]">
+                    <label class="font-bold" for="">Your Email</label>
+                    <input
+                      type="text"
+                      placeholder="Enter your email"
+                      class="mt-2 input input-bordered w-full  bg-[#13131808]"
+                    />
+                  </div>
                 </div>
+
+                <div class="grid gap-8 lg:grid-cols-2 grid-cols-1 mt-10">
+                  <div>
+                    <label class="font-bold" for="">Message</label>
+                    <input
+                      type="text"
+                      placeholder="Enter your message"
+                      class="mt-2 input input-bordered w-full  bg-[#13131808]"
+                    />
+                  </div>
+
+                  <div>
+                    <label class="font-bold" for="">Phone Number</label>
+                    <input
+                      type="text"
+                      placeholder="Enter your phone number"
+                      class="mt-2 input input-bordered w-full  bg-[#13131808]"
+                    />
+                  </div>
+                </div>
+
+                <div class="mt-10">
+                  <div>
+                    <label class="font-bold" for="">Message</label>
+                    <textarea
+                      class="w-full textarea textarea-bordered  bg-[#13131808]"
+                      placeholder="Write your message "
+                      rows="15"
+                    ></textarea>
+                  </div>
+                </div>
+
+                <button class="btn bg-btn-primary mt-3 text-white w-full font-bold">
+                  Send Message
+                </button>
               </div>
             </div>
           </div>
